@@ -2,24 +2,24 @@
 @prefix prod: <http://uni-ko-ld.de/ist/product#> .
 @prefix proc: <http://uni-ko-ld.de/ist/process#> .
 @prefix res: <http://uni-ko-ld.de/ist/resource#> .
-@prefix properties: <http://uni-ko-ld.de/ist/resource#> .
+@prefix prop: <http://uni-ko-ld.de/ist/property#> .
 
-#/* 1. Process */
+#process 1
 proc:senorFlashing model:hasInputProduct prod:radarSensor.
-proc:senorFlashing model:hasResource, res:firmwareFlasher. 
-proc:senorFlashing model:hasMeassurement, prop:firmwareVersion.
-proc:senorFlashing model:hasConstraint, prop:firmwareVersion.
-proc:senorFlashing model: hasOutputProduct, prod:flashedRadarSensor.
+proc:senorFlashing model:hasResource res:firmwareFlasher. 
+proc:senorFlashing model:hasMeassurement prop:firmwareVersion.
+proc:senorFlashing model:hasConstraint prop:firmwareVersion.
+proc:senorFlashing model:hasOutputProduct prod:flashedRadarSensor.
 
-#/* Link between 1. Process and 2. Process*/
+#link
 proc:sensorFlashing model:hasNextProcess proc:caseAssembly.
 
-#/* 2. Process */
+#process2
 proc:caseAssembly model:hasInputProduct prod:flashedRadarSensor.
-proc:caseAssembly model:hasResource, res:placer.
-proc:caseAssembly model:hasResource, res:screwer.
-proc:caseAssembly model:hasMeassurement, prop:position.
-proc:caseAssembly model:hasMeassurement, prop:force.
-proc:caseAssembly model:hasConstraint, prop:position.
-proc:caseAssembly model:hasConstraint, prop:force.
-proc:caseAssembly model:hasOutputProduct, prod:assembledSensor.
+proc:caseAssembly model:hasResource res:placer.
+proc:caseAssembly model:hasResource res:screwer.
+proc:caseAssembly model:hasMeassurement prop:position.
+proc:caseAssembly model:hasMeassurement prop:force.
+proc:caseAssembly model:hasConstraint prop:position.
+proc:caseAssembly model:hasConstraint prop:force.
+proc:caseAssembly model:hasOutputProduct prod:assembledSensor.
