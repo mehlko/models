@@ -1,5 +1,6 @@
 @prefix test: <http://test#> .
+@prefix test2: <http://test#> .
 
 #process 1
-test:a test:rel test:b.
-test:b test:rel2 test:c.
+test:a test2:rel test:b.
+test:b test2:rel2 test:c.
