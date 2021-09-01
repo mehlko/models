@@ -1,4 +1,3 @@
 PREFIX model: <http://uni-ko-ld.de/ist/model#>
 model:senorFlashing model:hasOutputProduct model:flashedRadarSensor.
 model:sensorFlashing model:next model:caseAssembly.
-model:caseAssembly model:hasInputProduct model:flashedRadarSensorFail.
