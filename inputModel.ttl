@@ -1,4 +1,5 @@
 PREFIX model: <http://uni-ko-ld.de/ist/model#>
 PREFIX prod: <http://uni-ko-ld.de/ist/product#>
+PREFIX proc: <http://uni-ko-ld.de/ist/process#>
 proc:senorFlashing model:hasOutputProduct prod:flashedRadarSensor.
 proc:senorFlashing model:hasNextProcess proc:caseAssembly.
