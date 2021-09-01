@@ -1,14 +1,14 @@
-@prefix model: <http://uni-ko-ld.de/ist/model#> .
-@prefix prod: <http://uni-ko-ld.de/ist/product#> .
-@prefix proc: <http://uni-ko-ld.de/ist/process#> .
-@prefix res: <http://uni-ko-ld.de/ist/resource#> .
-@prefix prop: <http://uni-ko-ld.de/ist/property#> .
+PREFIX model: <http://uni-ko-ld.de/ist/model#>
+PREFIX prod: <http://uni-ko-ld.de/ist/product#>
+PREFIX proc: <http://uni-ko-ld.de/ist/process#>
+PREFIX res: <http://uni-ko-ld.de/ist/resource#>
+PREFIX prop: <http://uni-ko-ld.de/ist/property#>
 proc:senorFlashing model:hasInputProduct prod:radarSensor.
 proc:senorFlashing model:hasResource res:firmwareFlasher. 
 proc:senorFlashing model:hasMeassurement prop:firmwareVersion.
 proc:senorFlashing model:hasConstraint prop:firmwareVersion.
 proc:senorFlashing model:hasOutputProduct prod:flashedRadarSensor.
-proc:sensorFlashing model:next proc:caseAssembly.
+proc:sensorFlashing model:hasNextProcess proc:caseAssembly.
 proc:caseAssembly model:hasInputProduct prod:flashedRadarSensorFail.
 proc:caseAssembly model:hasResource res:placer.
 proc:caseAssembly model:hasResource res:screwer.
