@@ -12,6 +12,8 @@ proc:senorFlashing model:hasConstraint prop:firmwareVersion.
 proc:senorFlashing model:hasOutputProduct prod:flashedRadarSensor.
 
 
+#link
+proc:sensorFlashing model:next proc:caseAssembly.
 
 #process2
 proc:caseAssembly model:hasInputProduct prod:flashedRadarSensorFail.
@@ -23,5 +25,3 @@ proc:caseAssembly model:hasConstraint prop:position.
 proc:caseAssembly model:hasConstraint prop:force.
 proc:caseAssembly model:hasOutputProduct prod:assembledSensor.
 
-#link
-proc:sensorFlashing model:hasNextProcess proc:caseAssembly.
