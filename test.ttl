@@ -1,4 +1,4 @@
-@prefix test: <http://uni-ko-ld.de/ist/model#> .
+@prefix test: <http://test#> .
 
 #process 1
 test:a test:rel prod:b.
