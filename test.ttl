@@ -1,6 +1,5 @@
-@prefix test: <http://test#> .
-@prefix test2: <http://test#> .
-
+PREFIX test: <http://test#>
+PREFIX test2: <http://test2#>
 #process 1
 test:a test2:rel test:b.
 test:b test2:rel2 test:c.
