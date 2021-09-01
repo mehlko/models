@@ -7,7 +7,7 @@ proc:senorFlashing model:hasInputProduct prod:radarSensor.
 proc:senorFlashing model:hasResource res:firmwareFlasher. 
 proc:senorFlashing model:hasMeassurement prop:firmwareVersion.
 proc:senorFlashing model:hasConstraint prop:firmwareVersion.
-proc:senorFlashing model:hasOutputProduct prod:flashedRadarSensor.
+proc:senorFlashing model:hasOutputProduct prod:flashedRadarSensor2.
 proc:senorFlashing model:hasNextProcess proc:caseAssembly.
 proc:caseAssembly model:hasInputProduct prod:flashedRadarSensorFail.
 proc:caseAssembly model:hasResource res:placer.
