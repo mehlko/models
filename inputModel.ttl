@@ -12,14 +12,14 @@ proc:senorFlashing model:hasConstraint, prop:firmwareVersion.
 proc:senorFlashing model: hasOutputProduct, prod:flashedRadarSensor.
 
 #/* Link between 1. Process and 2. Process*/
-proc:sensorFlashing model:hasNextProcess proc:caseAssembly).
+proc:sensorFlashing model:hasNextProcess proc:caseAssembly.
 
 #/* 2. Process */
 proc:caseAssembly model:hasInputProduct prod:flashedRadarSensor.
-proc:caseAssembly model:hasResource, res:placer).
-proc:caseAssembly model:hasResource, res:screwer).
-proc:caseAssembly model:hasMeassurement, prop:position).
-proc:caseAssembly model:hasMeassurement, prop:force).
-proc:caseAssembly model:hasConstraint, prop:position).
-proc:caseAssembly model:hasConstraint, prop:force).
-proc:caseAssembly model:hasOutputProduct, prod:assembledSensor).
+proc:caseAssembly model:hasResource, res:placer.
+proc:caseAssembly model:hasResource, res:screwer.
+proc:caseAssembly model:hasMeassurement, prop:position.
+proc:caseAssembly model:hasMeassurement, prop:force.
+proc:caseAssembly model:hasConstraint, prop:position.
+proc:caseAssembly model:hasConstraint, prop:force.
+proc:caseAssembly model:hasOutputProduct, prod:assembledSensor.
