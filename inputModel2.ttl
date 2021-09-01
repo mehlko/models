@@ -1,0 +1,19 @@
+@prefix model: <http://uni-ko-ld.de/ist/model#> .
+@prefix prod: <http://uni-ko-ld.de/ist/product#> .
+@prefix proc: <http://uni-ko-ld.de/ist/process#> .
+@prefix res: <http://uni-ko-ld.de/ist/resource#> .
+@prefix prop: <http://uni-ko-ld.de/ist/property#> .
+proc:senorFlashing model:hasInputProduct prod:radarSensor.
+proc:senorFlashing model:hasResource res:firmwareFlasher. 
+proc:senorFlashing model:hasMeassurement prop:firmwareVersion.
+proc:senorFlashing model:hasConstraint prop:firmwareVersion.
+proc:senorFlashing model:hasOutputProduct prod:flashedRadarSensor.
+proc:sensorFlashing model:next proc:caseAssembly.
+proc:caseAssembly model:hasInputProduct prod:flashedRadarSensorFail.
+proc:caseAssembly model:hasResource res:placer.
+proc:caseAssembly model:hasResource res:screwer.
+proc:caseAssembly model:hasMeassurement prop:position.
+proc:caseAssembly model:hasMeassurement prop:force.
+proc:caseAssembly model:hasConstraint prop:position.
+proc:caseAssembly model:hasConstraint prop:force.
+proc:caseAssembly model:hasOutputProduct prod:assembledSensor.
