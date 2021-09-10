@@ -1,4 +1,4 @@
-@prefix etim: <https://www.etim-international.com/#> .
+PREFIX etim: <https://www.etim-international.com/#>
 etim:EC002878 etim:hasSynonym "Pairs of diodes" .
 etim:EC002878 etim:hasSynonym "Diodemodule" .
 etim:EC002878 etim:hasSynonym "Diodeblock" .
